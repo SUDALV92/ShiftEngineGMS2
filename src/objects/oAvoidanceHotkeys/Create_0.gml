@@ -1,0 +1,2 @@
+ShortcutCount = 0;
+

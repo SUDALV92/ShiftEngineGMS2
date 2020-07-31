@@ -1,0 +1,7 @@
+/// @description  Set random sprite
+image_index = irandom( image_number - 1 );
+image_speed = 0;
+
+Stopped = false;
+
+
