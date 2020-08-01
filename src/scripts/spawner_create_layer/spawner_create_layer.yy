@@ -1,8 +1,8 @@
 {
-    "id": "e4217c0b-ac52-4201-bd16-7fb6d99b0d73",
+    "id": "4bf1b098-bece-44ae-981e-bb477db22c10",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "circle_create",
+    "name": "spawner_create_layer",
     "IsCompatibility": false,
     "IsDnD": false
 }

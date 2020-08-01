@@ -1,6 +1,7 @@
-/// @description  circle_create( spawnX, spawnY, spawnAngle, spawnNum, spawnObj, opt_circleParams )
+/// @description  circle_create_layer( spawnX, spawnY, layer, spawnAngle, spawnNum, spawnObj, opt_circleParams )
 /// @param  spawnX
 /// @param  spawnY
+/// @param  layer
 /// @param  spawnAngle
 /// @param  spawnNum
 /// @param  spawnObj
@@ -15,13 +16,14 @@
 
 var spawnX = argument[0];
 var spawnY = argument[1];
-var spawnAngle = argument[2];
-var spawnNum = argument[3];
-var spawnObj = argument[4];
+var layerID = argument[2];
+var spawnAngle = argument[3];
+var spawnNum = argument[4];
+var spawnObj = argument[5];
 
 var circle;
-if( argument_count > 5 ) {
-    circle = argument[5];
+if( argument_count > 6 ) {
+    circle = argument[6];
 } else {
     circle = circle_params_create();
 }
@@ -34,7 +36,7 @@ circle.x = spawnX;
 circle.y = spawnY;
 circle.Shift_EntityCount = spawnNum;
 for( var i = 0; i < spawnNum; i++ ) {
-    var entity = instance_create_depth( spawnX, spawnY, 0, oSpawnDummy );
+    var entity = instance_create_layer( spawnX, spawnY, layerID, oSpawnDummy );
     entity.direction = spawnAngle + i * ( 360 / spawnNum );
     entity.StartDirection = entity.direction;
     entity.Circle = circle;

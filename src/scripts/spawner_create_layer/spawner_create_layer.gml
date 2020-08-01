@@ -1,6 +1,7 @@
-/// @description  spawner_create( x, y, spawnPeriod, spawnObject, spawnDuration = undefined )
+/// @description  spawner_create_layer( x, y, layer, spawnPeriod, spawnObject, spawnDuration = undefined )
 /// @param  x
 /// @param  y
+/// @param  layer
 /// @param  spawnPeriod
 /// @param  spawnObject
 /// @param  spawnDuration = undefined 
@@ -14,18 +15,17 @@
 
 var spawnX = argument[0];
 var spawnY = argument[1];
-var spawnPeriod = argument[2];
-var spawnObject = argument[3];
+var layerID = argument[2];
+var spawnPeriod = argument[3];
+var spawnObject = argument[4];
 var spawnDuration = undefined;
-if( argument_count > 4 ) {
-    spawnDuration = argument[4];
+if( argument_count > 5 ) {
+    spawnDuration = argument[5];
 }
 
-var spawner = instance_create_depth( spawnX, spawnY, 0, oFixedSpawner );
+var spawner = instance_create_layer( spawnX, spawnY, layerID, oFixedSpawner );
 spawner.Period = spawnPeriod;
 spawner.CurrentPhase = 1;
 spawner.SpawnObject = spawnObject;
 spawner.Duration = spawnDuration;
 return spawner;
-
-

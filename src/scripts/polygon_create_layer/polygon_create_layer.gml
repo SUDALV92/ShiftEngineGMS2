@@ -1,6 +1,7 @@
-/// @description  polygon_create( spawnX, spawnY, spawnAngle, vertexCount, edgeEntityCount, spawnSpeed, spawnObj, opt_polygonParams )
+/// @description  polygon_create_layer( spawnX, spawnY, layer, spawnAngle, vertexCount, edgeEntityCount, spawnSpeed, spawnObj, opt_polygonParams )
 /// @param  spawnX
 /// @param  spawnY
+/// @param  layer
 /// @param  spawnAngle
 /// @param  vertexCount
 /// @param  edgeEntityCount
@@ -10,6 +11,7 @@
 // Spawn a ring of entities.
 // spawnX - center X
 // spawnY - center Y
+// layer - layer name or ID
 // spawnAngle - starting angle
 // vertexCount - number of vertices in a spawned polygon
 // edgeEntityCount - number of entities spawned per edge.
@@ -20,15 +22,16 @@
 
 var spawnX = argument[0];
 var spawnY = argument[1];
-var spawnAngle = argument[2];
-var vertexCount = argument[3];
-var edgeEntityCount = argument[4];
-var spawnSpeed = argument[5];
-var spawnObj = argument[6];
+var layerID = argument[2];
+var spawnAngle = argument[3];
+var vertexCount = argument[4];
+var edgeEntityCount = argument[5];
+var spawnSpeed = argument[6];
+var spawnObj = argument[7];
 
 var polygon;
-if( argument_count > 7 ) {
-    polygon = argument[7];
+if( argument_count > 8 ) {
+    polygon = argument[8];
 } else {
     polygon = polygon_params_create();
 }
@@ -58,7 +61,7 @@ for( var i = 0; i < vertexCount; i++ ) {
     {
         var xOffset = verticesX[i] + edgeDeltaX * j / edgeEntityCount;
         var yOffset = verticesY[i] + edgeDeltaY * j / edgeEntityCount;
-        var entity = instance_create_depth( spawnX + xOffset, spawnY + yOffset, 0, spawnObj );
+        var entity = instance_create_layer( spawnX + xOffset, spawnY + yOffset, layerID, spawnObj );
         entity.direction = point_direction( 0, 0, xOffset, yOffset );
         entity.speed = spawnSpeed * point_distance( 0, 0, xOffset, yOffset );
         polygon.Shift_Entities[i * edgeEntityCount + j] = entity;
