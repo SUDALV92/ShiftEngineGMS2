@@ -1,4 +1,4 @@
 # ShiftEngine GMS2
  Port of [ShiftEngine](https://github.com/Remag/ShiftEngine) to Game Maker Studio 2
 
-Last synced update: [22.07.2020](https://github.com/Remag/ShiftEngine/commit/a084e9b01dd8f00beb1ac1b5f7bb84be8eb0a2a0)
+Last synced update: [01.08.2020](hhttps://github.com/Remag/ShiftEngine/commit/270ef86075158f71b2405ad5991e608dd3ddc2af)
