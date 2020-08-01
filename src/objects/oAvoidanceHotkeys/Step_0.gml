@@ -1,4 +1,9 @@
 /// @description  General hotkeys
+if( !avoidance_is_playing() ) {
+    instance_destroy();
+    exit;
+}
+
 var avoidance = global.ActiveAvoidance;
 if( button_check_pressed( global.AvoidancePause ) ) {
     avoidance.IsPaused = !avoidance.IsPaused;   

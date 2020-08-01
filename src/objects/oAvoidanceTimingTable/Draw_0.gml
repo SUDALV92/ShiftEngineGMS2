@@ -1,6 +1,10 @@
 var timingsList = oAvoidancePersistentData.TimingsList;
 var avoidance = global.ActiveAvoidance;
 var step = avoidance.Step;
+var cam = view_get_camera(0);
+var panelX = camera_get_view_x(cam) + PanelXOffset;
+var panelY = camera_get_view_y(cam) + PanelYOffset;
+
 if( TableFreezeTiming != -1 ) {
     step = TableFreezeTiming;
 }
@@ -22,10 +26,10 @@ for( var i = 0; i < count; i++ ) {
             timingColor = merge_color( c_lime, c_white, timingPosition );
             timingAlpha = 1;
         }
-        var lineY = PanelY + displayCount * LineHeight;
+        var lineY = panelY + displayCount * LineHeight;
         var timingStr = "Step: " + string( currentStep );
         draw_set_alpha( timingAlpha );
-        draw_text_outline( PanelX, lineY, timingStr, timingColor, c_black );
+        draw_text_outline( panelX, lineY, timingStr, timingColor, c_black );
         displayCount++;
     }
     if( displayCount > MaxLineDisplayCount ) {
@@ -34,10 +38,10 @@ for( var i = 0; i < count; i++ ) {
 }
 
 draw_set_alpha( 1 );
-var mouseLinePos = floor( ( mouse_y - PanelY + 5 ) / LineHeight );
-var lineLeft = PanelX + SelectionRectLeft;
-var lineRight = PanelX + SelectionRectRight;
-var lineTop = PanelY + mouseLinePos * LineHeight - 5;
+var mouseLinePos = floor( ( mouse_y - panelY + 5 ) / LineHeight );
+var lineLeft = panelX + SelectionRectLeft;
+var lineRight = panelX + SelectionRectRight;
+var lineTop = panelY + mouseLinePos * LineHeight - 5;
 var lineBottom = lineTop + LineHeight;
 if( mouse_x >= lineLeft && mouse_x < lineRight + 2 * CrossRectHWidth && mouseLinePos >= 0 && mouseLinePos < displayCount ) {
     draw_set_color( c_white );
@@ -62,6 +66,3 @@ if( mouse_x >= lineLeft && mouse_x < lineRight + 2 * CrossRectHWidth && mouseLin
 } else {
     TableFreezeTiming = -1;
 }
-
-
-

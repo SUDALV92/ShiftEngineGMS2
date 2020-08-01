@@ -1,4 +1,4 @@
-/// @description  draw_debug_ui(INSTANCE player, NUMBER x, NUMBER y, COLOR drawColor, FONT drawFont)
+/// @description  draw_debug_ui( coordinateTarget, x, y, drawColor, drawFont)
 /// @param INSTANCE player
 /// @param  NUMBER x
 /// @param  NUMBER y

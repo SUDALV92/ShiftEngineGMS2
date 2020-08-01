@@ -1,5 +1,5 @@
-PanelX = 48;
-PanelY = 88;
+PanelXOffset = 48;
+PanelYOffset = 88;
 LineHeight = 32;
 MaxLineDisplayCount = 5;
 CrossRectHWidth = 20;
@@ -9,4 +9,3 @@ SelectionRectRight = 140;
 TimingDisplayDelay = 100;
 
 TableFreezeTiming = -1;
-

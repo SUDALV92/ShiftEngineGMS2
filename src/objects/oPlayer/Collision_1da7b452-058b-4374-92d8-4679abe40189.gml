@@ -1,9 +1,5 @@
 /// @description  Death check
 
-if( global.God ) {
-    exit;
-}
-
 var playerId = id;
 var killer = other.id;
 // Check direct killer commands.
@@ -35,4 +31,3 @@ do {
 
 // No relevant killer commands found, kill the player by default.
 player_kill();
-

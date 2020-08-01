@@ -24,7 +24,7 @@ if( argument_count > 3 ) {
 
 var resultSpawner = noone;
 with( ownerId ) {
-    var spawner = instance_create_layer( x, y, layer, oAttachedSpawner );
+    var spawner = instance_create_depth( x, y, layer_get_depth(layer), oAttachedSpawner );
     spawner.OwnerInstance = id;
     spawner.Period = spawnPeriod;
     spawner.CurrentPhase = 1;

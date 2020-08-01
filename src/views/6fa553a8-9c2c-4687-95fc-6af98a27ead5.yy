@@ -18,7 +18,8 @@
         "7d99e873-c68e-48d5-85a5-4603ce9497f2",
         "63221485-7ac4-486f-bb53-ae7212f832b0",
         "22e51878-a6de-4f28-a7f7-fd45650855ca",
-        "5817d6df-fd04-48df-a71a-62ea5c7c6a25"
+        "5817d6df-fd04-48df-a71a-62ea5c7c6a25",
+        "d4e02246-c6e1-4092-aefb-55508299e541"
     ],
     "filterType": "GMScript",
     "folderName": "instance_manipulation",

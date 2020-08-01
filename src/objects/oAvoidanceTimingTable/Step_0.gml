@@ -1,7 +1,15 @@
+if( !avoidance_is_playing() ) {
+    instance_destroy();
+    exit;
+}
 var avoidance = global.ActiveAvoidance;
 var step = avoidance.Step;
 var timingsList = oAvoidancePersistentData.TimingsList;
 var timingsCount = ds_list_size( timingsList );
+var cam = view_get_camera(0);
+var panelX = camera_get_view_x(cam) + PanelXOffset;
+var panelY = camera_get_view_y(cam) + PanelYOffset;
+
 if( !avoidance.IsPaused ) {
     for( var i = 0; i < timingsCount; i++ ) {  
         var timing = timingsList[|i];   
@@ -49,10 +57,10 @@ if( lMousePressed || rMousePressed ) {
         }
     }
 
-    var mouseLinePos = floor( ( mouse_y - PanelY + 5 ) / LineHeight );
+    var mouseLinePos = floor( ( mouse_y - panelY + 5 ) / LineHeight );
     var timingPos = mouseLinePos + firstTimingPos;
-    var lineLeft = PanelX + SelectionRectLeft;
-    var lineRight = PanelX + SelectionRectRight;
+    var lineLeft = panelX + SelectionRectLeft;
+    var lineRight = panelX + SelectionRectRight;
     if( mouse_x >= lineLeft && mouse_x < lineRight ) {
         if( mouseLinePos >= 0 && mouseLinePos < displayCount ) {
             var oldTiming = timingsList[|timingPos];
@@ -87,4 +95,3 @@ if( lMousePressed || rMousePressed ) {
         }
     }   
 }
-

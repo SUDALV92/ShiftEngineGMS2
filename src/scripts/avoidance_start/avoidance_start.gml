@@ -1,4 +1,5 @@
 /// @description  avoidance_start( musicId )
+// Initialize an avoidance fight. A given music track will be played and synchronized with room FPS.
 /// @param  musicId 
 var musicId = argument0;
 
