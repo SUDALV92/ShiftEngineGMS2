@@ -1,0 +1,679 @@
+Converting GML script: ${project_dir}\scripts\load_metadata\load_metadata.gml
+Converted description /// @description  load_metadata()
+Converted string - line 3: "Saves\metadata" -> "Saves\\metadata"
+
+Converting GML script: ${project_dir}\scripts\save_metadata\save_metadata.gml
+Converted description /// @description  save_metadata()
+Converted string - line 3: "Saves\metadata" -> "Saves\\metadata"
+
+Converting GML script: ${project_dir}\scripts\initialize_game\initialize_game.gml
+Converted description /// @description  initialize_game( slotIndex )/// @param  slotIndex
+
+Converting GML script: ${project_dir}\scripts\update_title\update_title.gml
+Converted description /// @description  update_title()
+
+Converting GML script: ${project_dir}\scripts\draw_debug_ui\draw_debug_ui.gml
+Converted description /// @description  draw_debug_ui( coordinateTarget, x, y, drawColor, drawFont)/// @param  coordinateTarget
+/// @param  x
+/// @param  y
+/// @param  drawColor
+/// @param  drawFont
+
+Converting GML script: ${project_dir}\scripts\check_common_hotkeys\check_common_hotkeys.gml
+Converted description /// @description  check_common_hotkeys()
+
+Converting GML script: ${project_dir}\scripts\create_time_string\create_time_string.gml
+Converted description /// @description  create_time_string( NUMBER secondsCount )/// @param  NUMBER secondsCount
+Converted string - line 20: ':' -> ":"
+Converted string - line 20: ':' -> ":"
+
+Converting GML script: ${project_dir}\scripts\update_kid_sprite\update_kid_sprite.gml
+Converted description /// @description  update_kid_sprite( prevAnimationState )/// @param  prevAnimationState
+
+Converting GML script: ${project_dir}\scripts\set_mask\set_mask.gml
+Converted description /// @description  set_mask()
+
+Converting GML script: ${project_dir}\scripts\smoothing_mode_get_default\smoothing_mode_get_default.gml
+Converted description /// @description  smoothing_mode_get_default()
+
+Converting GML script: ${project_dir}\scripts\get_save_file_name\get_save_file_name.gml
+Converted description /// @description  get_save_file_name( saveIndex )/// @param  saveIndex
+Converted string - line 7: "Saves\save" -> "Saves\\save"
+
+Converting GML script: ${project_dir}\scripts\create_save_data\create_save_data.gml
+Converted description /// @description  create_save_data()
+
+Converting GML script: ${project_dir}\scripts\get_save_data\get_save_data.gml
+Converted description /// @description  get_save_data( saveIndex )/// @param  saveIndex
+
+Converting GML script: ${project_dir}\scripts\delete_save_data\delete_save_data.gml
+Converted description /// @description  delete_save_data( slotIndex )/// @param  slotIndex
+
+Converting GML script: ${project_dir}\scripts\draw_text_outline\draw_text_outline.gml
+Converted description /// @description  draw_text_outline( textX, textY, textStr, opt_textColor, opt_outlineColor )/// @param  textX
+/// @param  textY
+/// @param  textStr
+/// @param  opt_textColor
+/// @param  opt_outlineColor
+
+Converting GML script: ${project_dir}\scripts\draw_text_scaled_outline\draw_text_scaled_outline.gml
+Converted description /// @description  draw_text_scaled_outline( textX, textY, scaleX, scaleY, textStr, textColor = c_white, outlineColor = c_black )/// @param  textX
+/// @param  textY
+/// @param  scaleX
+/// @param  scaleY
+/// @param  textStr
+/// @param  textColor = c_white
+/// @param  outlineColor = c_black
+
+Converting GML script: ${project_dir}\scripts\show_confirm_prompt\show_confirm_prompt.gml
+Converted description /// @description  show_confirm_prompt( questionStr, onConfirmScript )/// @param  questionStr
+/// @param  onConfirmScript
+
+Converting GML script: ${project_dir}\scripts\play_sound\play_sound.gml
+Converted description /// @description  play_sound( soundResouce )/// @param  soundResouce
+
+Converting GML script: ${project_dir}\scripts\stop_sound\stop_sound.gml
+Converted description /// @description  stop_sound( soundInstance )/// @param  soundInstance
+
+Converting GML script: ${project_dir}\scripts\update_bgm\update_bgm.gml
+Converted description /// @description  update_bgm( soundResource )/// @param  soundResource
+
+Converting GML script: ${project_dir}\scripts\player_kill\player_kill.gml
+Converted description /// @description  player_kill()
+
+Converting GML script: ${project_dir}\scripts\player_flip\player_flip.gml
+Converted description /// @description  player_flip()
+
+Converting GML script: ${project_dir}\scripts\player_set_max_air_jumps\player_set_max_air_jumps.gml
+Converted description /// @description  player_set_max_air_jumps( jumpCount )/// @param  jumpCount
+
+Converting GML script: ${project_dir}\scripts\room_set_infinite_jump\room_set_infinite_jump.gml
+Converted description /// @description  room_set_infinite_jump( isSet )/// @param  isSet
+
+Converting GML script: ${project_dir}\scripts\game_reload_world\game_reload_world.gml
+Converted description /// @description  game_reload_world()
+
+Converting GML script: ${project_dir}\scripts\game_save_player\game_save_player.gml
+Converted description /// @description  game_save_player()
+
+Converting GML script: ${project_dir}\scripts\game_save_stats\game_save_stats.gml
+Converted description /// @description  game_save_stats()
+
+Converting GML script: ${project_dir}\scripts\game_get_value\game_get_value.gml
+Converted description /// @description  game_get_value( valueNameStr )/// @param  valueNameStr
+
+Converting GML script: ${project_dir}\scripts\game_get_flag\game_get_flag.gml
+Converted description /// @description  game_get_flag( flagNameStr )/// @param  flagNameStr
+
+Converting GML script: ${project_dir}\scripts\game_set_value\game_set_value.gml
+Converted description /// @description  set_game_value( valueNameStr, value )/// @param  valueNameStr
+/// @param  value
+
+Converting GML script: ${project_dir}\scripts\register_keybind\register_keybind.gml
+Converted description /// @description  register_keybind( keyNameStr, defaultKeyCode )/// @param  keyNameStr
+/// @param  defaultKeyCode
+
+Converting GML script: ${project_dir}\scripts\register_system_keybind\register_system_keybind.gml
+Converted description /// @description  register_system_keybind( keyCode )/// @param  keyCode
+
+Converting GML script: ${project_dir}\scripts\button_check_pressed\button_check_pressed.gml
+Converted description /// @description  button_check_pressed( keyIndex )/// @param  keyIndex
+
+Converting GML script: ${project_dir}\scripts\button_check_released\button_check_released.gml
+Converted description /// @description  button_check_released( keyIndex )/// @param  keyIndex
+
+Converting GML script: ${project_dir}\scripts\button_check\button_check.gml
+Converted description /// @description  button_check( keyCode )/// @param  keyCode
+
+Converting GML script: ${project_dir}\scripts\button_check_direct\button_check_direct.gml
+Converted description /// @description  button_check_direct( keyCode )/// @param  keyCode
+
+Converting GML script: ${project_dir}\scripts\get_button_name\get_button_name.gml
+Converted description /// @description  get_button_name( keyIndex )/// @param  keyIndex
+
+Converting GML script: ${project_dir}\scripts\get_virtual_key_name\get_virtual_key_name.gml
+Converted description /// @description  get_button_name( virtualCode )/// @param  virtualCode
+Converted string - line 129: "\" -> "\\"
+
+Converting GML script: ${project_dir}\scripts\set_keyboard_bind\set_keyboard_bind.gml
+Converted description /// @description  set_keyboard_bind( keyIndex, newKeyCode )/// @param  keyIndex
+/// @param  newKeyCode
+
+Converting GML script: ${project_dir}\scripts\avoidance_start\avoidance_start.gml
+Converted description /// @description  avoidance_start( musicId )/// @param  musicId
+
+Converting GML script: ${project_dir}\scripts\avoidance_is_playing\avoidance_is_playing.gml
+Converted description /// @description  avoidance_is_playing()
+
+Converting GML script: ${project_dir}\scripts\avoidance_finish\avoidance_finish.gml
+Converted description /// @description  avoidance_finish()
+
+Converting GML script: ${project_dir}\scripts\avoidance_set_step\avoidance_set_step.gml
+Converted description /// @description  avoidance_set_step( newStep )/// @param  newStep
+
+Converting GML script: ${project_dir}\scripts\avoidance_get_step\avoidance_get_step.gml
+Converted description /// @description  avoidance_get_step()
+
+Converting GML script: ${project_dir}\scripts\avoidance_register_shortcut\avoidance_register_shortcut.gml
+Converted description /// @description / avoidance_register_shortcut( avoidanceInstance, shortcutKey, avoidanceStep )/// @param  avoidanceInstance
+/// @param  shortcutKey
+/// @param  avoidanceStep
+
+Converting GML script: ${project_dir}\scripts\avoidance_add_room\avoidance_add_room.gml
+Converted description /// @description  avoidance_add_room( avoidanceId, roomId )/// @param  avoidanceId
+/// @param  roomId
+
+Converting GML script: ${project_dir}\scripts\spawner_create\spawner_create.gml
+Converted description /// @description  spawner_create( x, y, spawnPeriod, spawnObject, spawnDuration = undefined )/// @param  x
+/// @param  y
+/// @param  spawnPeriod
+/// @param  spawnObject
+/// @param  spawnDuration = undefined
+
+Converting GML script: ${project_dir}\scripts\spawner_attach\spawner_attach.gml
+Converted description /// @description  spawner_attach( ownerId, spawnPeriod, spawnObject, spawnDuration = undefined )/// @param  ownerId
+/// @param  spawnPeriod
+/// @param  spawnObject
+/// @param  spawnDuration = undefined
+
+Converting GML script: ${project_dir}\scripts\executor_create\executor_create.gml
+Converted description /// @description  executor_create( executePeriod, targetScript, executeDuration = undefined )/// @param  executePeriod
+/// @param  targetScript
+/// @param  executeDuration = undefined
+
+Converting GML script: ${project_dir}\scripts\executor_attach\executor_attach.gml
+Converted description /// @description  executor_attach( ownerId, executePeriod, targetScript, executeDuration = undefined )/// @param  ownerId
+/// @param  executePeriod
+/// @param  targetScript
+/// @param  executeDuration = undefined
+
+Converting GML script: ${project_dir}\scripts\circle_params_create\circle_params_create.gml
+Converted description /// @description  circle_params_create()
+
+Converting GML script: ${project_dir}\scripts\circle_create\circle_create.gml
+Converted description /// @description  circle_create( spawnX, spawnY, spawnAngle, spawnNum, spawnObj, opt_circleParams )/// @param  spawnX
+/// @param  spawnY
+/// @param  spawnAngle
+/// @param  spawnNum
+/// @param  spawnObj
+/// @param  opt_circleParams
+
+Converting GML script: ${project_dir}\scripts\polygon_params_create\polygon_params_create.gml
+Converted description /// @description  polygon_params_create()
+
+Converting GML script: ${project_dir}\scripts\polygon_create\polygon_create.gml
+Converted description /// @description  polygon_create( spawnX, spawnY, spawnAngle, vertexCount, edgeEntityCount, spawnSpeed, spawnObj, opt_polygonParams )/// @param  spawnX
+/// @param  spawnY
+/// @param  spawnAngle
+/// @param  vertexCount
+/// @param  edgeEntityCount
+/// @param  spawnSpeed
+/// @param  spawnObj
+/// @param  opt_polygonParams
+
+Converting GML script: ${project_dir}\scripts\view_offset\view_offset.gml
+Converted builtin - line 12: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted description /// @description  view_offset( targetX, targetY, duration, easingFunc = tween_sine_inout )/// @param  targetX
+/// @param  targetY
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\view_rotate\view_rotate.gml
+Converted builtin - line 12: view_angle[0] -> __view_get( e__VW.Angle, 0 )
+Converted description /// @description  view_rotate( targetAngle, duration, easingFunc = tween_sine_inout )/// @param  targetAngle
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\instance_move_to\instance_move_to.gml
+Converted description /// @description  instance_move_to( targetId, targetX, targetY, duration, easingFunc = tween_sine_inout )/// @param  targetId
+/// @param  targetX
+/// @param  targetY
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\instance_move_to_x\instance_move_to_x.gml
+Converted description /// @description  instance_move_to_x( targetId, targetX, duration, easingFunc = tween_sine_inout )/// @param  targetId
+/// @param  targetX
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\instance_move_to_y\instance_move_to_y.gml
+Converted description /// @description  instance_move_to_y( targetId, targetY, duration, easingFunc = tween_sine_inout )/// @param  targetId
+/// @param  targetY
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\instance_offset\instance_offset.gml
+Converted description /// @description  instance_offset( targetId, deltaX, deltaY, duration, easingFunc = tween_sine_inout )/// @param  targetId
+/// @param  deltaX
+/// @param  deltaY
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\instance_change_color\instance_change_color.gml
+Converted description /// @description  instance_change_color( targetId, targetColor, duration, easingFunc = tween_linear )/// @param  targetId
+/// @param  targetColor
+/// @param  duration
+/// @param  easingFunc = tween_linear
+
+Converting GML script: ${project_dir}\scripts\instance_change_alpha\instance_change_alpha.gml
+Converted description /// @description  instance_change_alpha( targetId, targetAlpha, duration, easingFunc = tween_linear )/// @param  targetId
+/// @param  targetAlpha
+/// @param  duration
+/// @param  easingFunc = tween_linear
+
+Converting GML script: ${project_dir}\scripts\instance_scale\instance_scale.gml
+Converted description /// @description  instance_scale( targetId, targetScale, duration, easingFunc = tween_sine_inout )/// @param  targetId
+/// @param  targetScale
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\instance_scale_x\instance_scale_x.gml
+Converted description /// @description  instance_scale_x( targetId, targetScale, duration, easingFunc = tween_sine_inout )/// @param  targetId
+/// @param  targetScale
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\instance_scale_y\instance_scale_y.gml
+Converted description /// @description  instance_scale_y( targetId, targetScale, duration, easingFunc = tween_sine_inout )/// @param  targetId
+/// @param  targetScale
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\instance_rotate_image\instance_rotate_image.gml
+Converted description /// @description  instance_rotate_image( targetId, targetAngle, duration, easingFunc = tween_sine_inout )/// @param  targetId
+/// @param  targetAngle
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\instance_redirect\instance_redirect.gml
+Converted description /// @description  instance_redirect( targetId, targetDirection, duration, easingFunc = tween_sine_inout )/// @param  targetId
+/// @param  targetDirection
+/// @param  duration
+/// @param  easingFunc = tween_sine_inout
+
+Converting GML script: ${project_dir}\scripts\instance_fade_out\instance_fade_out.gml
+Converted description /// @description  instance_fade_out( targetId, fadeDuration )/// @param  targetId
+/// @param  fadeDuration
+
+Converting GML script: ${project_dir}\scripts\instance_inbounds_check\instance_inbounds_check.gml
+Converted description /// @description  instance_inbounds_check( instanceId = id )/// @param  instanceId = id
+
+Converting GML script: ${project_dir}\scripts\killer_set_active\killer_set_active.gml
+Converted description /// @description  killer_set_active( killerId, isActive )/// @param  killerId
+/// @param  isActive
+
+Converting GML script: ${project_dir}\scripts\trail_attach\trail_attach.gml
+Converted description /// @description  trail_attach( targetId, trailSpriteCount, opt_trailSprite )/// @param  targetId
+/// @param  trailSpriteCount
+/// @param  opt_trailSprite
+
+Converting GML script: ${project_dir}\scripts\instance_set_scale\instance_set_scale.gml
+Converted description /// @description  instance_set_scale( targetId, targetScale )/// @param  targetId
+/// @param  targetScale
+
+Converting GML script: ${project_dir}\scripts\instance_bounce_block\instance_bounce_block.gml
+Converted description /// @description  instance_bounce_block( blockObject = oBlock )/// @param  blockObject = oBlock
+
+Converting GML script: ${project_dir}\scripts\tween_return_sine_inout\tween_return_sine_inout.gml
+Converted description /// @description  tween_return_sine_inout( beginValue, totalDelta, step, duration );/// @param  beginValue
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_return_exp_inout\tween_return_exp_inout.gml
+Converted description /// @description  tween_return_exp_inout( beginValue, totalDelta, step, duration );/// @param  beginValue
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_return_quad_inout\tween_return_quad_inout.gml
+Converted description /// @description  tween_return_quad_inout( beginValue, totalDelta, step, duration );/// @param  beginValue
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tweem_return_linear\tweem_return_linear.gml
+Converted description /// @description  tweem_return_linear( beginValue, totalDelta, step, duration );/// @param  beginValue
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_sine_in\tween_sine_in.gml
+Converted description /// @description  tween_sine_in( begin, totalDelta, step, duration );/// @param  begin
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_sine_out\tween_sine_out.gml
+Converted description /// @description  tween_sine_out( beginValue, totalDelta, step, duration );/// @param  beginValue
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_sine_inout\tween_sine_inout.gml
+Converted description /// @description  tween_sine_inout( begin, totalDelta, step, duration );/// @param  begin
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_exp_in\tween_exp_in.gml
+Converted description /// @description  tween_exp_in( begin, totalDelta, step, duration );/// @param  begin
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_exp_out\tween_exp_out.gml
+Converted description /// @description  tween_exp_out( begin, totalDelta, step, duration );/// @param  begin
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_exp_inout\tween_exp_inout.gml
+Converted description /// @description  tween_exp_inout( begin, totalDelta, step, duration );/// @param  begin
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_quad_in\tween_quad_in.gml
+Converted description /// @description  tween_quad_in( begin, totalDelta, step, duration );/// @param  begin
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_quad_out\tween_quad_out.gml
+Converted description /// @description  tween_quad_out( begin, totalDelta, step, duration );/// @param  begin
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_quad_inout\tween_quad_inout.gml
+Converted description /// @description  tween_quad_inout( beginValue, totalDelta, step, duration );/// @param  beginValue
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_back_in\tween_back_in.gml
+Converted description /// @description  tween_back_in( beginValue, totalDelta, step, duration );/// @param  beginValue
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_back_out\tween_back_out.gml
+Converted description /// @description  tween_back_out( beginValue, totalDelta, step, duration );/// @param  beginValue
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_back_inout\tween_back_inout.gml
+Converted description /// @description  tween_back_inout( beginValue, totalDelta, step, duration );/// @param  beginValue
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\tween_linear\tween_linear.gml
+Converted description /// @description  tween_linear( begin, totalDelta, step, duration );/// @param  begin
+/// @param  totalDelta
+/// @param  step
+/// @param  duration
+
+Converting GML script: ${project_dir}\scripts\oscillate_sine\oscillate_sine.gml
+Converted description /// @description  oscillate_sine( minValue, maxValue, step, period );/// @param  minValue
+/// @param  maxValue
+/// @param  step
+/// @param  period
+
+Font fDebugFont has been converted to font family Consolas (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fDebugFont\fDebugFont.gms1.png
+Font fMenuOptionFont has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fMenuOptionFont\fMenuOptionFont.gms1.png
+Font fMenuDescriptionFont has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fMenuDescriptionFont\fMenuDescriptionFont.gms1.png
+Converting GML script: ${project_dir}\objects\oWorld\Create_0.gml
+Converted description /// @description  Init
+
+Converting GML script: ${project_dir}\objects\oWorld\Destroy_0.gml
+Converted description /// @description  Cleanup
+
+Converting GML script: ${project_dir}\objects\oWorld\Step_2.gml
+Converted description /// @description  Timer
+
+Converting GML script: ${project_dir}\objects\oWorld\Step_0.gml
+Converted description /// @description  Keys
+
+Converting GML script: ${project_dir}\objects\oWorld\Other_10.gml
+Converted description /// @description  Cleanup
+
+Converting GML script: ${project_dir}\objects\oWorld\Other_3.gml
+Converted description /// @description  Cleanup
+
+Converting GML script: ${project_dir}\objects\oWorld\Draw_75.gml
+Converted description /// @description  Debug UI
+
+Converting GML script: ${project_dir}\objects\oAvoidance\Other_10.gml
+Converted description /// @description  Cleanup
+
+Converting GML script: ${project_dir}\objects\oAvoidancePersistentData\Other_10.gml
+Converted description /// @description  Cleanup
+
+Converting GML script: ${project_dir}\objects\oAvoidanceHotkeys\Step_0.gml
+Converted description /// @description  General hotkeys
+
+Converting GML script: ${project_dir}\objects\oAvoidanceHotkeys\Other_10.gml
+Converted description /// @description  Set and remember an avoidance timing
+
+Converting GML script: ${project_dir}\objects\oAvoidanceEditSlider\Step_0.gml
+Converted builtin - line 9: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 10: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: ${project_dir}\objects\oAvoidanceEditSlider\Draw_0.gml
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: ${project_dir}\objects\oAvoidanceDebugInfo\Draw_0.gml
+Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 22: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 23: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 3: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted string - line 15: '0' -> "0"
+
+Converting GML script: ${project_dir}\objects\oAvoidanceTimingTable\Step_0.gml
+Converted builtin - line 9: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\objects\oAvoidanceTimingTable\Draw_0.gml
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted string - line 29: 'Step: ' -> "Step: "
+
+Converting GML script: ${project_dir}\objects\oFadeCommand\Alarm_0.gml
+Converted description /// @description  Destroy any remaining instances.
+
+Converting GML script: ${project_dir}\objects\oViewOffsetCommand\Step_0.gml
+Converted builtin - line 4: view_xview[0] = StartX + smoothVal * MaxX -> __view_set( e__VW.XView, 0, StartX + smoothVal * MaxX )
+Converted builtin - line 9: view_xview[0] = StartX + smoothVal * MaxX -> __view_set( e__VW.XView, 0, StartX + smoothVal * MaxX )
+Converted builtin - line 5: view_yview[0] = StartY + smoothVal * MaxY -> __view_set( e__VW.YView, 0, StartY + smoothVal * MaxY )
+Converted builtin - line 10: view_yview[0] = StartY + smoothVal * MaxY -> __view_set( e__VW.YView, 0, StartY + smoothVal * MaxY )
+
+Converting GML script: ${project_dir}\objects\oViewRotateCommand\Step_2.gml
+Converted builtin - line 3: view_angle[0] = script_execute( Smoother, StartAngle, AngleDelta, Duration, Duration ) -> __view_set( e__VW.Angle, 0, script_execute( Smoother, StartAngle, AngleDelta, Duration, Duration ) )
+Converted builtin - line 6: view_angle[0] = script_execute( Smoother, StartAngle, AngleDelta, Step, Duration ) -> __view_set( e__VW.Angle, 0, script_execute( Smoother, StartAngle, AngleDelta, Step, Duration ) )
+
+Converting GML script: ${project_dir}\objects\oGravityUp\Collision_244c17c7-a742-4bd1-8861-fced17f64db7.gml
+Converted description /// @description  Flip if normal gravity
+
+Converting GML script: ${project_dir}\objects\oGravityDown\Collision_e6e8210b-5396-4c37-8266-fc1e745deedf.gml
+Converted description /// @description  Flip if reversed gravity
+
+Converting GML script: ${project_dir}\objects\oFruit\Create_0.gml
+Converted description /// @description  Animation
+
+Converting GML script: ${project_dir}\objects\oPlayerBlood\Create_0.gml
+Converted description /// @description  Set random sprite
+
+Converting GML script: ${project_dir}\objects\oPlayerBlood\Collision_38a2da05-106f-4417-8839-3446af689cfc.gml
+Converted description /// @description  Stop on contact
+
+Converting GML script: ${project_dir}\objects\oPlayerBloodEmitter\Create_0.gml
+Converted description /// @description  Set self-destruct timer
+
+Converting GML script: ${project_dir}\objects\oPlayerBloodEmitter\Alarm_0.gml
+Converted description /// @description  Destroy
+
+Converting GML script: ${project_dir}\objects\oPlayerBloodEmitter\Step_0.gml
+Converted description /// @description  Emit blood
+
+Converting GML script: ${project_dir}\objects\oBullet\Alarm_0.gml
+Converted description /// @description  Expired
+
+Converting GML script: ${project_dir}\objects\oBullet\Collision_894c9d4d-bca5-4e89-89ff-1567d31bbf18.gml
+Converted description /// @description  -> UserEvent0
+
+Converting GML script: ${project_dir}\objects\oBullet\Other_10.gml
+Converted description /// @description  Destroy
+
+Converting GML script: ${project_dir}\objects\oBullet\Other_0.gml
+Converted description /// @description  -> UserEvent0
+
+Converting GML script: ${project_dir}\objects\oPlayer\Create_0.gml
+Converted description /// @description  Initialization
+
+Converting GML script: ${project_dir}\objects\oPlayer\Step_2.gml
+Converted description /// @description  Debug: Change V-Align
+
+Converting GML script: ${project_dir}\objects\oPlayer\Step_0.gml
+Converted description /// @description  Movement
+
+Converting GML script: ${project_dir}\objects\oPlayer\Collision_aa7c4ea6-d27a-47d6-9e3c-351a98dab536.gml
+Converted description /// @description  Death check
+
+Converting GML script: ${project_dir}\objects\oPlayer\Collision_e19506a1-74cc-4918-b387-b1028126a27f.gml
+Converted description /// @description  Death check
+
+Converting GML script: ${project_dir}\objects\oPlayer\Collision_a7de82ab-3640-47c9-b0a6-0398f575df0b.gml
+Converted description /// @description  Platform Magic
+
+Converting GML script: ${project_dir}\objects\oPlayer\Collision_c469325d-a6d9-4495-a729-71ce15756a9d.gml
+Converted description /// @description  Collision
+
+Converting GML script: ${project_dir}\objects\oPlayer\Draw_0.gml
+Converted description /// @description  Drawing Self & Hitbox
+
+Converting GML script: ${project_dir}\objects\oPlayerEntrance\Other_4.gml
+Converted description /// @description  Create Player
+
+Converting GML script: ${project_dir}\objects\oRoomSwitch\Create_0.gml
+Converted description /// @description  Setup
+
+Converting GML script: ${project_dir}\objects\oRoomSwitch\Collision_af318dc0-78eb-42cc-be27-749ddb6993e7.gml
+Converted description /// @description  Go to room
+
+Converting GML script: ${project_dir}\objects\oTrigger\Create_0.gml
+Converted description /// @description  Object description
+
+Converting GML script: ${project_dir}\objects\oSavePoint\Create_0.gml
+Converted description /// @description  Variables
+
+Converting GML script: ${project_dir}\objects\oSavePoint\Alarm_0.gml
+Converted description /// @description  Reset cooldown
+
+Converting GML script: ${project_dir}\objects\oSavePoint\Step_0.gml
+Converted description /// @description  Save
+
+Converting GML script: ${project_dir}\objects\oSavePoint\Other_7.gml
+Converted description /// @description  Reset sprite
+
+Converting GML script: ${project_dir}\objects\oMainMenu\Other_14.gml
+Converted description /// @description  Confirm and quit
+
+Converting GML script: ${project_dir}\objects\oMainMenu\Other_13.gml
+Converted description /// @description  Quit
+
+Converting GML script: ${project_dir}\objects\oMainMenu\Other_12.gml
+Converted description /// @description  Settings
+
+Converting GML script: ${project_dir}\objects\oMainMenu\Other_11.gml
+Converted description /// @description  New game
+
+Converting GML script: ${project_dir}\objects\oMainMenu\Other_10.gml
+Converted description /// @description  Continue game
+
+Converting GML script: ${project_dir}\objects\oSaveSlotMenu\Other_25.gml
+Converted description /// @description  Cleanup
+
+Converting GML script: ${project_dir}\objects\oSaveSlotMenu\Other_13.gml
+Converted description /// @description  Decrease slot index
+
+Converting GML script: ${project_dir}\objects\oSaveSlotMenu\Other_12.gml
+Converted description /// @description  Increase slot index
+
+Converting GML script: ${project_dir}\objects\oSaveSlotMenu\Other_11.gml
+Converted description /// @description  Back to main menu
+
+Converting GML script: ${project_dir}\objects\oSaveSlotMenu\Other_10.gml
+Converted description /// @description  Load or start a new game
+
+Converting GML script: ${project_dir}\objects\oSettingsMenu\Other_25.gml
+Converted description /// @description  Update option values.
+Converted string - line 2: '%' -> "%"
+Converted string - line 3: '%' -> "%"
+
+Converting GML script: ${project_dir}\objects\oSettingsMenu\Other_24.gml
+Converted description /// @description  Save settings.
+
+Converting GML script: ${project_dir}\objects\oSettingsMenu\Other_17.gml
+Converted description /// @description  Toggle texture smoothing.
+
+Converting GML script: ${project_dir}\objects\oSettingsMenu\Other_16.gml
+Converted description /// @description  Back.
+
+Converting GML script: ${project_dir}\objects\oSettingsMenu\Other_15.gml
+Converted description /// @description  Keyboard controls.
+
+Converting GML script: ${project_dir}\objects\oSettingsMenu\Other_14.gml
+Converted description /// @description  Toggle music mute.
+
+Converting GML script: ${project_dir}\objects\oSettingsMenu\Other_13.gml
+Converted description /// @description  Decrease music.
+
+Converting GML script: ${project_dir}\objects\oSettingsMenu\Other_12.gml
+Converted description /// @description  Increase music.
+
+Converting GML script: ${project_dir}\objects\oSettingsMenu\Other_11.gml
+Converted description /// @description  Decrease sound.
+
+Converting GML script: ${project_dir}\objects\oSettingsMenu\Other_10.gml
+Converted description /// @description  Increase sound.
+
+Converting GML script: ${project_dir}\objects\oKeyboardControlsMenu\Other_11.gml
+Converted description /// @description  Back.
+
+Converting GML script: ${project_dir}\objects\oKeyboardControlsMenu\Other_10.gml
+Converted description /// @description  Key change.
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Missing audiogroup for sound: 'seJump' - setting to default audio group
+Missing audiogroup for sound: 'seJump2' - setting to default audio group
+Missing audiogroup for sound: 'seJump3' - setting to default audio group
+Missing audiogroup for sound: 'seDeath' - setting to default audio group
+Missing audiogroup for sound: 'seShoot' - setting to default audio group
+Missing audiogroup for sound: 'musLunarAbyss' - setting to default audio group
+Missing audiogroup for sound: 'sndSnap' - setting to default audio group
+Game speed set to 120
+Added compatibility script 'draw/draw_set_color_write_enable.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'texture/texture_set_interpolation.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

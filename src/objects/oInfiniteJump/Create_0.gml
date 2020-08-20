@@ -1,4 +1,0 @@
-with( oPlayer ) {
-    CurrentAirJumpCount = AirJumpCount;
-}
-
