@@ -5,6 +5,12 @@ if( instance_exists( oPlayerLoadData ) ) {
     exit;
 }
 
+if( instance_exists( oPlayer ) )
+{
+	instance_destroy();
+	exit;
+}
+
 var playerOffsetX = 27;
 var playerOffsetY = 36;
 if( !instance_exists( oPlayerEntranceData ) ) {
