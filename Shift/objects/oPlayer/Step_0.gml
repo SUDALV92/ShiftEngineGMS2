@@ -263,4 +263,3 @@ if( abs( vspeed ) > Vscap ) {
 }
 
 update_kid_sprite( prevAnimationState );
-
