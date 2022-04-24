@@ -78,11 +78,12 @@ if(place_meeting(x,y,oPlatform))
 }
 #endregion
 #region COLLISION oKiller
-if(place_meeting(x,y,oKiller))
+var killer = instance_place(x,y,oKiller);
+if(killer != noone )
 {
 	/// @description  Death check
 	var playerId = id;
-	var killer = other.id;
+	
 	// Check direct killer commands.
 	with( oKillerInstanceActivationCommand ) {
 	    if( KillerId == killer ) {
@@ -115,15 +116,15 @@ if(place_meeting(x,y,oKiller))
 }
 #endregion
 #region COLLISION oAvoidanceKiller
-if(place_meeting(x,y,oAvoidanceKiller))
+var avoidancekiller = instance_place(x,y,oAvoidanceKiller);
+if( avoidancekiller != noone )
 {
 	/// @description  Death check
-
 	var playerId = id;
-	var killer = other.id;
+	
 	// Check direct killer commands.
 	with( oKillerInstanceActivationCommand ) {
-	    if( KillerId == killer ) {
+	    if( KillerId == avoidancekiller ) {
 	        if( IsActive ) {
 	            with( playerId ) {
 	                player_kill();
@@ -133,7 +134,7 @@ if(place_meeting(x,y,oAvoidanceKiller))
 	    }   
 	}
 	// Check object killer commands.
-	var objectId = killer.object_index;
+	var objectId = avoidancekiller.object_index;
 	do {
 	    with( oKillerObjectActivationCommand ) {
 	        if( KillerId == objectId ) {
