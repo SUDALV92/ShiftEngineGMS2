@@ -56,20 +56,21 @@ if(place_meeting(x,y,oBlock))
 }
 #endregion
 #region COLLISION oPlatform
-if(place_meeting(x,y,oPlatform))
+var platformInstance = instance_place( x, y, oPlatform );
+if( platformInstance != noone )
 {
 	if( GravityDir == 1 ) {
-	    if( y - vspeed / 2 <= other.y ) {
-	        y += other.bbox_top - bbox_bottom - 1;
-	        vspeed = other.vspeed;
+	    if( y - vspeed / 2 <= platformInstance.y ) {
+	        y += platformInstance.bbox_top - bbox_bottom - 1;
+	        vspeed = platformInstance.vspeed;
 	        HFrameStep = 0;
 	        OnPlatform = true;
 	        CurrentAirJumpCount = MaxAirJumpCount;
 	    }
 	} else {
-	    if( y - vspeed / 2 >= other.y + 23 ) {
-	        y += other.bbox_bottom - bbox_top + 1;
-	        vspeed = other.vspeed;
+	    if( y - vspeed / 2 >= platformInstance.y + 23 ) {
+	        y += platformInstance.bbox_bottom - bbox_top + 1;
+	        vspeed = platformInstance.vspeed;
 	        HFrameStep = 0;
 	        OnPlatform = true;
 	        CurrentAirJumpCount = MaxAirJumpCount;
