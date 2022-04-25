@@ -62,9 +62,13 @@ function polygon_create() {
 	    {
 	        var xOffset = verticesX[i] + edgeDeltaX * j / edgeEntityCount;
 	        var yOffset = verticesY[i] + edgeDeltaY * j / edgeEntityCount;
-	        var entity = instance_create_layer( spawnX + xOffset, spawnY + yOffset, spawnLayer, spawnObj );
+	        var entity = instance_create_layer( spawnX + xOffset, spawnY + yOffset, spawnLayer, oSpawnDummy );
 	        entity.direction = point_direction( 0, 0, xOffset, yOffset );
 	        entity.speed = spawnSpeed * point_distance( 0, 0, xOffset, yOffset );
+			entity.Polygon = polygon;
+			with( entity ) {
+				instance_change( spawnObj, true );
+			}
 	        polygon.Shift_Entities[i * edgeEntityCount + j] = entity;
 	    }
 	}
