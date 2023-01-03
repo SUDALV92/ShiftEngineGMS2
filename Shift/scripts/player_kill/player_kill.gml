@@ -1,7 +1,6 @@
-/// @description  player_kill()
-function player_kill() {
-	// Kills the calling player.
-
+// Kills the calling player.
+function player_kill()
+{
 	if( global.God ) {
 	    return false;
 	}
@@ -20,9 +19,4 @@ function player_kill() {
 	    instance_destroy();
 	}
 	return true;
-
-
-
-
-
 }

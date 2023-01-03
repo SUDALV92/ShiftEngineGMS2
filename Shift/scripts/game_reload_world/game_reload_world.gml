@@ -1,7 +1,6 @@
-/// @description  game_reload_world()
-function game_reload_world() {
-	// Load the game with the world's SaveData. Returns if loading was a success.
-
+// Load the game with the world's SaveData. Returns if loading was a success.
+function game_reload_world()
+{
 	var sx = oWorld.SaveData[? "engine.x"];
 	var sy = oWorld.SaveData[? "engine.y"];
 	var sr = oWorld.SaveData[? "engine.room"];
@@ -35,7 +34,4 @@ function game_reload_world() {
 	    show_message( "Room in savefile doesn't exist!" );
 	    return false;
 	}
-
-
-
 }

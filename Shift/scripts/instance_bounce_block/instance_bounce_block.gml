@@ -1,13 +1,7 @@
-/// @description  instance_bounce_block( blockObject = oBlock )
-/// @param  blockObject = oBlock 
-function instance_bounce_block(argument0) {
-	// Bounce off of block instances. Specific block objects may be passed as a target of bouncing.
-	// This script needs to be called every step for the bouncing effect.
-	var blockObject = oBlock;
-	if( argument_count > 0 ) {
-	    blockObject = argument0;
-	}
-
+// Bounce off of block instances. Specific block objects may be passed as a target of bouncing.
+// This script needs to be called every step for the bouncing effect.
+function instance_bounce_block( blockObject = oBlock ) 
+{
 	with( blockObject ) {
 	    solid = true;
 	}
@@ -15,7 +9,4 @@ function instance_bounce_block(argument0) {
 	with( blockObject ) {
 	    solid = false;
 	}
-
-
-
 }

@@ -1,14 +1,9 @@
-/// @description  killer_set_active( killerId, isActive )
-/// @param  killerId
-/// @param  isActive 
-function killer_set_active(argument0, argument1) {
-	// Enable or disable player killers. An inactive killer will not trigger on player contact.
-	// All killers are active by default.
-	// An instance id or a general object id can be passed as an argument.
-	// A killer deactivation command lasts until the killer is reactivated or until the room changes.
-	var targetId = argument0;
-	var isActive = argument1;
-
+// Enable or disable player killers. An inactive killer will not trigger on player contact.
+// All killers are active by default.
+// An instance id or a general object id can be passed as an argument.
+// A killer deactivation command lasts until the killer is reactivated or until the room changes.
+function killer_set_active( targetId, isActive ) 
+{
 	if( object_exists( targetId ) ) {
 	    // Activate all instances of an object.
 	    var createNewCommand = true;
@@ -55,8 +50,4 @@ function killer_set_active(argument0, argument1) {
 	    newCommand.KillerId = targetId;
 	    newCommand.IsActive = isActive;
 	}
-
-
-
-
 }

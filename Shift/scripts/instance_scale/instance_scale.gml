@@ -1,20 +1,7 @@
-/// @description  instance_scale( targetId, targetScale, duration, easingFunc = tween_sine_inout )
-/// @param  targetId
-/// @param  targetScale
-/// @param  duration
-/// @param  easingFunc = tween_sine_inout 
-function instance_scale() {
-	// Change the X and Y scale of an instance or all instances of an object.
-	// New instance commands override existing ones.
-	var targetId = argument[0];
-	var targetScale = argument[1];
-	var duration = argument[2];
-
-	var easingFunc = tween_sine_inout;
-	if( argument_count > 3 ) {
-	    easingFunc = argument[3];
-	}
-
+// Change the X and Y scale of an instance or all instances of an object.
+// New instance commands override existing ones.
+function instance_scale( targetId, targetScale, duration, easingFunc = tween_sine_inout ) 
+{
 	with( targetId ) {
 	    var command = instance_create_depth( x, y, 0, oScaleCommand );
 	    command.TargetId = id;
@@ -25,7 +12,4 @@ function instance_scale() {
 	    command.Smoother = easingFunc;
 	    self.ShiftInternal_ScaleChangeCommand = command;
 	}
-
-
-
 }

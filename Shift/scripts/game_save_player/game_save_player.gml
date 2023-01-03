@@ -1,7 +1,6 @@
-/// @description  game_save_player()
-function game_save_player() {
-	// Save current player position and progress to the file indicated by oWorld.SaveIndex.
-
+// Save current player position and progress to the file indicated by oWorld.SaveIndex.
+function game_save_player()
+{
 	if( instance_exists( oPlayer ) ) {
 	    oWorld.SaveData[? "engine.x"] = oPlayer.x;
 	    oWorld.SaveData[? "engine.y"] = oPlayer.y;
@@ -21,7 +20,4 @@ function game_save_player() {
 	oWorld.SaveData[? "engine.room"] = room;
 	oWorld.SaveData[? "engine.freshSave"] = false;
 	game_save_stats();
-
-
-
 }

@@ -1,42 +1,16 @@
-/// @description  polygon_create( spawnX, spawnY, layer, spawnAngle, vertexCount, edgeEntityCount, spawnSpeed, spawnObj, opt_polygonParams )
-/// @param  spawnX
-/// @param  spawnY
-/// @param  layer
-/// @param  spawnAngle
-/// @param  vertexCount
-/// @param  edgeEntityCount
-/// @param  spawnSpeed
-/// @param  spawnObj
-/// @param  opt_polygonParams 
-function polygon_create() {
-	// Spawn a ring of entities.
-	// spawnX - center X
-	// spawnY - center Y
-	// layer - spawning layer
-	// spawnAngle - starting angle
-	// vertexCount - number of vertices in a spawned polygon
-	// edgeEntityCount - number of entities spawned per edge.
-	// spawnSpeed - base speed of a polygon from the spawn position.
-	// spawnObj - entity object to spawn
-	// (optional) polygonParams - instance id with arbitrary shape parameters. 
-	//  This argument will be attached to every entity as a "Polygon" field.
-
-	var spawnX = argument[0];
-	var spawnY = argument[1];
-	var spawnLayer = argument[2];
-	var spawnAngle = argument[3];
-	var vertexCount = argument[4];
-	var edgeEntityCount = argument[5];
-	var spawnSpeed = argument[6];
-	var spawnObj = argument[7];
-
-	var polygon;
-	if( argument_count > 8 ) {
-	    polygon = argument[8];
-	} else {
-	    polygon = polygon_params_create();
-	}
-
+// Spawn a ring of entities.
+// spawnX - center X
+// spawnY - center Y
+// layer - spawning layer
+// spawnAngle - starting angle
+// vertexCount - number of vertices in a spawned polygon
+// edgeEntityCount - number of entities spawned per edge.
+// spawnSpeed - base speed of a polygon from the spawn position.
+// spawnObj - entity object to spawn
+// (optional) polygonParams - instance id with arbitrary shape parameters. 
+//  This argument will be attached to every entity as a "Polygon" field.
+function polygon_create( spawnX, spawnY, spawnLayer, spawnAngle, vertexCount, edgeEntityCount, spawnSpeed, spawnObj, polygon = polygon_params_create())
+{
 	if( polygon.Shift_EntityCount != 0 ) {
 	    show_error( "Same polygon parameters cannot be used for multiple polygons.", true );
 	}
@@ -67,13 +41,10 @@ function polygon_create() {
 	        entity.speed = spawnSpeed * point_distance( 0, 0, xOffset, yOffset );
 			entity.Polygon = polygon;
 			with( entity ) {
-				instance_change( spawnObj, true );
+	        instance_change( spawnObj, true );
 			}
 	        polygon.Shift_Entities[i * edgeEntityCount + j] = entity;
 	    }
 	}
 	return polygon;
-
-
-
 }

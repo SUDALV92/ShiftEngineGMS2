@@ -1,35 +1,15 @@
-/// @description  circle_create( spawnX, spawnY, spawnAngle, spawnNum, spawnObj, opt_circleParams )
-/// @param  spawnX
-/// @param  spawnY
-/// @param  layer
-/// @param  spawnAngle
-/// @param  spawnNum
-/// @param  spawnObj
-/// @param  opt_circleParams 
-function circle_create() {
-	// Spawn a ring of entities.
-	// spawnX - center X
-	// spawnY - center Y
-	// layer - spawning layer
-	// spawnAngle - starting angle
-	// spawnNum - number of entities to spawn
-	// spawnObj - entity object to spawn
-	// (optional) circleParams - instance id with arbitrary circle parameters. This argument will be attached to every entity as a "Circle" field.
-
-	var spawnX = argument[0];
-	var spawnY = argument[1];
-	var spawnLayer = argument[2];
-	var spawnAngle = argument[3];
-	var spawnNum = argument[4];
-	var spawnObj = argument[5];
-
-	var circle;
-	if( argument_count > 6 ) {
-	    circle = argument[6];
-	} else {
-	    circle = circle_params_create();
-	}
-
+// Spawn a ring of entities.
+// spawnX - center X
+// spawnY - center Y
+// layer - spawning layer
+// spawnAngle - starting angle
+// spawnNum - number of entities to spawn
+// spawnObj - entity object to spawn
+// (optional) circleParams - instance id with arbitrary circle parameters. This argument will be attached to every entity as a "Circle" field.
+function circle_create(spawnX, spawnY, spawnLayer, spawnAngle, spawnNum, spawnObj, circleParams = circle_params_create())
+{
+	var circle = circleParams;
+	
 	if( circle.Shift_EntityCount != 0 ) {
 	    show_error( "Same circle parameters cannot be used for multiple circles.", true );
 	}
@@ -48,7 +28,4 @@ function circle_create() {
 	    circle.Shift_Entities[i] = entity;
 	}
 	return circle;
-
-
-
 }

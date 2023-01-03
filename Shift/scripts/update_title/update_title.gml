@@ -7,10 +7,9 @@ function update_title() {
 
 	c = string_replace( c, "%D", string( oWorld.DeathCount ) ); // Match %D with Deaths
 	c = string_replace( c, "%T", create_time_string( t ) ); // Match %T with Time
-
-	window_set_caption( global.WindowTitle + c ); // Set formatted string as title
-
-
-
-
+	
+	if( oWorld.SaveIndex == 0 )
+		window_set_caption( global.WindowTitle ); // Set title without stats
+	else
+		window_set_caption( global.WindowTitle + c ); // Set formatted string as title
 }

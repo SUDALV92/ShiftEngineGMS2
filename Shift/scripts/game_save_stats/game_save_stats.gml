@@ -1,7 +1,6 @@
-/// @description  game_save_stats()
-function game_save_stats() {
-	// Save global player statistics like death count and time played.
-
+// Save global player statistics like death count and time played.
+function game_save_stats()
+{
 	oWorld.SaveData[? "engine.time"] = oWorld.TimeSeconds;
 	oWorld.SaveData[? "engine.death"] = oWorld.DeathCount;
 
@@ -9,7 +8,4 @@ function game_save_stats() {
 	var saveJson = json_encode( oWorld.SaveData );
 	file_text_write_string( saveFile, saveJson );
 	file_text_close( saveFile );
-
-
-
 }

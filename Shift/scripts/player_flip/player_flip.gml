@@ -1,8 +1,8 @@
-/// @description  player_flip()
-function player_flip() {
-	// Flips player gravity.
-
-	with( oPlayer ) {
+// Flips player gravity.
+function player_flip()
+{
+	with( oPlayer )
+	{
 	    GravityDir = -GravityDir;
 	    if( global.GiveAirJumpsOnFlip ) {
 	        CurrentAirJumpCount = MaxAirJumpCount;
@@ -19,8 +19,4 @@ function player_flip() {
 	        y += GravityDir;
 	    }
 	}
-
-
-
-
 }

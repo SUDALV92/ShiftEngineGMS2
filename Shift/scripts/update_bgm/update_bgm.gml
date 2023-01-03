@@ -1,9 +1,7 @@
-/// @description  update_bgm( soundResource )
-/// @param  soundResource 
-function update_bgm(argument0) {
-	// Updates background music.
-	// Pass "noone" as music to stop the current track.
-	var soundResource = argument0;
+// Updates background music.
+// Pass "noone" as music to stop the current track.
+function update_bgm(soundResource) 
+{
 	if( soundResource == noone ) {   
 	    audio_stop_sound( global.InstanceBGM );
 	    global.CurrentBGM = noone;
@@ -19,7 +17,4 @@ function update_bgm(argument0) {
 	    update_music_volume();
 	}
 	return true; 
-
-
-
 }

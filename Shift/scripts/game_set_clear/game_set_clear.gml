@@ -1,8 +1,4 @@
-function game_set_clear(argument0) {
-	// game_set_clear( isSet )
-	var isSet = argument0;
+function game_set_clear(isSet)
+{
 	game_set_value( "engine.gameClear", isSet );
-
-
-
 }

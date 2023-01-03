@@ -1,7 +1,6 @@
-/// @description  instance_inbounds_check( instanceId = id )
-/// @param  instanceId = id 
-function instance_inbounds_check() {
-	// Check if an instance lies within the current room and destroy it if it doesn't.
+// Check if an instance lies within the current room and destroy it if it doesn't.
+function instance_inbounds_check() 
+{	
 	var instanceId = noone;
 	if( argument_count > 0 ) {
 	    instanceId = argument[0];
@@ -18,8 +17,4 @@ function instance_inbounds_check() {
 	        instance_destroy();
 	    }
 	}
-
-
-
-
 }

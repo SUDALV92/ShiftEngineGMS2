@@ -1,17 +1,5 @@
-/// @description  trail_attach( targetId, trailSpriteCount, opt_trailSprite )
-/// @param  targetId
-/// @param  trailSpriteCount
-/// @param  opt_trailSprite 
-function trail_attach() {
-	var targetId = argument[0];
-	var spriteCount = argument[1];
-	var trailSprite;
-	if( argument_count > 2 ) {
-	    trailSprite = argument[2];
-	} else if( instance_exists( targetId ) ) {
-	    trailSprite = targetId.sprite_index;
-	}
-
+function trail_attach( targetId, spriteCount, trailSprite = targetId.sprite_index ) 
+{
 	var trail;
 	with( targetId ) {
 	    trail = instance_create_depth( 0, 0, depth, oEntityTrail );
@@ -39,7 +27,4 @@ function trail_attach() {
 	    Trail = trail;
 	}
 	return trail;
-
-
-
 }
